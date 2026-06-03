@@ -1,13 +1,13 @@
 """Scorers for evaluating the support triage agent.
 
-Three deterministic scorers + two LLM judges. The deterministic ones run on every
-prod trace; the LLM judges (especially escalation_correctness) are the ones aligned
-to human labels in 01_eval_flywheel.
+Two deterministic scorers + three LLM judges. The deterministic ones run on every
+prod trace; of the LLM judges, escalation_correctness is the one aligned to human
+labels in 02_human_review.
 """
 from typing import Any
 
 from mlflow.genai.judges import make_judge
-from mlflow.genai.scorers import scorer
+from mlflow.genai.scorers import Guidelines, scorer
 
 from .config import JUDGE_MODEL
 
@@ -24,14 +24,6 @@ def response_length_ok(outputs: dict[str, Any]) -> int:
     draft = outputs.get("draft", "") if isinstance(outputs, dict) else ""
     word_count = len(draft.split())
     return 1 if length_min <= word_count <= length_max else 0
-
-
-@scorer
-def category_in_enum(outputs: dict[str, Any]) -> int:
-    """1 if the agent's category is one of the allowed values."""
-    categories = {"billing", "shipping", "refund", "technical", "other"}
-    cat = outputs.get("category", "") if isinstance(outputs, dict) else ""
-    return 1 if cat in categories else 0
 
 
 @scorer
@@ -99,6 +91,21 @@ helpfulness = make_judge(
 )
 
 
-DETERMINISTIC_SCORERS = [response_length_ok, category_in_enum, tool_calls_valid]
-JUDGE_SCORERS = [escalation_correctness, helpfulness]
+# Guidelines-based judge: lighter to author than a full rubric. The Guidelines scorer
+# auto-extracts the request/response from the trace, so the guideline text refers to
+# "the response" (not the {{ inputs }}/{{ outputs }} templating make_judge uses).
+professional_tone = Guidelines(
+    name="professional_tone",
+    guidelines=(
+        "The customer-facing reply in the response (the 'draft' field) must be written in a "
+        "professional, courteous, business-appropriate tone. It must NOT use slang, overly "
+        "casual or playful language, emojis, or informal greetings. Judge only the tone and "
+        "language style of the draft — not whether it resolves the customer's issue."
+    ),
+    model=f"databricks:/{JUDGE_MODEL}",
+)
+
+
+DETERMINISTIC_SCORERS = [response_length_ok, tool_calls_valid]
+JUDGE_SCORERS = [escalation_correctness, helpfulness, professional_tone]
 ALL_SCORERS = DETERMINISTIC_SCORERS + JUDGE_SCORERS
