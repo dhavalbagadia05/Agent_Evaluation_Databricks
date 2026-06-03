@@ -8,6 +8,7 @@ End-to-end demo of the Evaluation Flywheel for GenAI on Databricks. A small cust
 - Send tickets through the agent as **production traffic** (MLflow 3 traces) and score them with **production monitoring** — deterministic scorers + LLM judges running on sampled prod traces
 - **Eval & promote** (`01`): curate prod tickets into a versioned eval dataset, run baseline vs candidate experiments with `mlflow.genai.evaluate()`, and promote a winning prompt by moving the `production` alias — the agent picks it up with zero code change
 - **Human review & alignment** (`02`): collect human labels (pre-recorded shortcut **or** a live MLflow labeling session / Review App) and align an LLM judge to the human pattern
+- **Drive the loop with an agent** (Genie Code): analyze and compare eval runs, explain *why* a candidate wins or regresses, and draft + register the next prompt iteration
 
 ## The flywheel in pictures
 
@@ -49,6 +50,20 @@ A judge is only as good as its alignment to human experts. Spin up a labeling se
 ![Labeling session](screenshots/09-labeling-session.png)
 ![Review App shared with experts to collect feedback](screenshots/10-review-app.png)
 ![The aligned judge after incorporating human feedback](screenshots/12-aligned-judge-after-feedback.png)
+
+### 6. Accelerate the loop with Genie Code
+
+You don't have to drive every step by hand. Point an AI coding agent — here, **Genie Code** — at the experiment, and it reads the traces and eval runs directly to help analyze results and draft the next iteration.
+
+**Analyze & compare runs.** Ask "compare candidate-v2 with baseline-eval — which is better and why?" and it pulls the metrics for both runs, builds the comparison, and explains the differences in plain language: candidate-v2 wins `professional_tone` (0% → 100%) and `response_length_ok` (0% → 100%), ties on `tool_calls_valid` / `helpfulness`, and trails slightly on `escalation_correctness` (80% vs 100%) — its one weakness.
+
+![Genie Code comparing candidate-v2 vs baseline-eval](screenshots/13-genie-code-analyze-eval-runs.png)
+
+**Iterate on the prompt.** Hand it that weakness and it proposes a concrete **candidate-v3** — an explicit escalation checklist plus a "don't ask for proof, escalate instead" rule for the billing edge case — targeted at the failing cases without regressing the passing ones, and offers to register it as a new prompt version and re-run the eval to verify.
+
+![Genie Code proposing candidate-v3 prompt changes](screenshots/14-genie-code-iterate-prompt.png)
+
+This turns the manual iterate → evaluate → promote loop into a conversational one — the same flywheel, driven by an agent.
 
 ## Prerequisites
 
