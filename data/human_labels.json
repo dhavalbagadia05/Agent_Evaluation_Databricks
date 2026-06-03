@@ -1,0 +1,142 @@
+[
+  {
+    "ticket_id": "T-0026",
+    "correct_category": "shipping",
+    "correct_should_escalate": true,
+    "reviewer_notes": "Genuinely ambiguous \u2014 escalation warranted given complexity / customer position.",
+    "difficulty_bucket": "ambiguous"
+  },
+  {
+    "ticket_id": "T-0003",
+    "correct_category": "billing",
+    "correct_should_escalate": false,
+    "reviewer_notes": "Customer is frustrated but issue is resolvable with available tools/policy. No escalation needed.",
+    "difficulty_bucket": "ambiguous"
+  },
+  {
+    "ticket_id": "T-0045",
+    "correct_category": "refund",
+    "correct_should_escalate": false,
+    "reviewer_notes": "Customer is frustrated but issue is resolvable with available tools/policy. No escalation needed.",
+    "difficulty_bucket": "ambiguous"
+  },
+  {
+    "ticket_id": "T-0052",
+    "correct_category": "refund",
+    "correct_should_escalate": false,
+    "reviewer_notes": "Customer is frustrated but issue is resolvable with available tools/policy. No escalation needed.",
+    "difficulty_bucket": "ambiguous"
+  },
+  {
+    "ticket_id": "T-0041",
+    "correct_category": "shipping",
+    "correct_should_escalate": true,
+    "reviewer_notes": "Genuinely ambiguous \u2014 escalation warranted given complexity / customer position.",
+    "difficulty_bucket": "ambiguous"
+  },
+  {
+    "ticket_id": "T-0004",
+    "correct_category": "billing",
+    "correct_should_escalate": true,
+    "reviewer_notes": "Genuinely ambiguous \u2014 escalation warranted given complexity / customer position.",
+    "difficulty_bucket": "ambiguous"
+  },
+  {
+    "ticket_id": "T-0011",
+    "correct_category": "billing",
+    "correct_should_escalate": false,
+    "reviewer_notes": "Customer is frustrated but issue is resolvable with available tools/policy. No escalation needed.",
+    "difficulty_bucket": "ambiguous"
+  },
+  {
+    "ticket_id": "T-0062",
+    "correct_category": "technical",
+    "correct_should_escalate": false,
+    "reviewer_notes": "Customer is frustrated but issue is resolvable with available tools/policy. No escalation needed.",
+    "difficulty_bucket": "ambiguous"
+  },
+  {
+    "ticket_id": "T-0021",
+    "correct_category": "billing",
+    "correct_should_escalate": false,
+    "reviewer_notes": "Customer is frustrated but issue is resolvable with available tools/policy. No escalation needed.",
+    "difficulty_bucket": "ambiguous"
+  },
+  {
+    "ticket_id": "T-0076",
+    "correct_category": "other",
+    "correct_should_escalate": true,
+    "reviewer_notes": "Genuinely ambiguous \u2014 escalation warranted given complexity / customer position.",
+    "difficulty_bucket": "ambiguous"
+  },
+  {
+    "ticket_id": "T-0032",
+    "correct_category": "shipping",
+    "correct_should_escalate": false,
+    "reviewer_notes": "Customer is frustrated but issue is resolvable with available tools/policy. No escalation needed.",
+    "difficulty_bucket": "ambiguous"
+  },
+  {
+    "ticket_id": "T-0067",
+    "correct_category": "technical",
+    "correct_should_escalate": false,
+    "reviewer_notes": "Customer is frustrated but issue is resolvable with available tools/policy. No escalation needed.",
+    "difficulty_bucket": "ambiguous"
+  },
+  {
+    "ticket_id": "T-0027",
+    "correct_category": "shipping",
+    "correct_should_escalate": false,
+    "reviewer_notes": "Customer is frustrated but issue is resolvable with available tools/policy. No escalation needed.",
+    "difficulty_bucket": "ambiguous"
+  },
+  {
+    "ticket_id": "T-0070",
+    "correct_category": "technical",
+    "correct_should_escalate": true,
+    "reviewer_notes": "Genuinely ambiguous \u2014 escalation warranted given complexity / customer position.",
+    "difficulty_bucket": "ambiguous"
+  },
+  {
+    "ticket_id": "T-0044",
+    "correct_category": "refund",
+    "correct_should_escalate": false,
+    "reviewer_notes": "Customer is frustrated but issue is resolvable with available tools/policy. No escalation needed.",
+    "difficulty_bucket": "ambiguous"
+  },
+  {
+    "ticket_id": "T-0055",
+    "correct_category": "refund",
+    "correct_should_escalate": true,
+    "reviewer_notes": "Clear escalation trigger present (legal threat, fraud, safety, or out-of-scope issue).",
+    "difficulty_bucket": "should_escalate"
+  },
+  {
+    "ticket_id": "T-0073",
+    "correct_category": "technical",
+    "correct_should_escalate": true,
+    "reviewer_notes": "Clear escalation trigger present (legal threat, fraud, safety, or out-of-scope issue).",
+    "difficulty_bucket": "should_escalate"
+  },
+  {
+    "ticket_id": "T-0006",
+    "correct_category": "billing",
+    "correct_should_escalate": true,
+    "reviewer_notes": "Clear escalation trigger present (legal threat, fraud, safety, or out-of-scope issue).",
+    "difficulty_bucket": "should_escalate"
+  },
+  {
+    "ticket_id": "T-0035",
+    "correct_category": "shipping",
+    "correct_should_escalate": true,
+    "reviewer_notes": "Clear escalation trigger present (legal threat, fraud, safety, or out-of-scope issue).",
+    "difficulty_bucket": "should_escalate"
+  },
+  {
+    "ticket_id": "T-0016",
+    "correct_category": "billing",
+    "correct_should_escalate": true,
+    "reviewer_notes": "Clear escalation trigger present (legal threat, fraud, safety, or out-of-scope issue).",
+    "difficulty_bucket": "should_escalate"
+  }
+]

@@ -1,0 +1,962 @@
+[
+  {
+    "ticket_id": "T-0001",
+    "customer_id": "C-018",
+    "order_id": "O-1018",
+    "subject": "Unauthorized charge on my account + refund request for O-1018",
+    "body": "I need immediate help with two issues. First, I want a refund for my Webcam Light Ring (order O-1018) as it arrived with a defective clip. Second, and more urgently, I noticed a charge of $89.99 on my card from your store that I absolutely did not authorize \u2014 I never placed another order. Someone may have compromised my account. I am filing a dispute with my bank and will be contacting the FTC if this isn't resolved within 24 hours.",
+    "_truth": {
+      "expected_category": "billing",
+      "should_escalate": true,
+      "difficulty_bucket": "should_escalate"
+    }
+  },
+  {
+    "ticket_id": "T-0002",
+    "customer_id": "C-010",
+    "order_id": null,
+    "subject": "Pro tier billing discrepancy - charged different amounts each month",
+    "body": "Hi, I've been a Pro member for over a year now and I just noticed that my monthly charges have been inconsistent \u2014 some months I'm charged $29.99, others $34.99, and last month it was $39.99. I never received any notification about price changes or tier adjustments. I need someone to explain what's going on because at this point I'm questioning whether I can trust the billing on this account. If this isn't resolved properly I'll need to dispute these charges with my bank.",
+    "_truth": {
+      "expected_category": "billing",
+      "should_escalate": true,
+      "difficulty_bucket": "ambiguous"
+    }
+  },
+  {
+    "ticket_id": "T-0003",
+    "customer_id": "C-028",
+    "order_id": "O-1028",
+    "subject": "Charged for Pro Monthly but I thought I switched to Annual",
+    "body": "Hi, I noticed a $9.99 charge on my account for O-1028 but I'm pretty sure I switched to the annual plan a few weeks ago. I don't remember if the change actually went through or if it was supposed to take effect next cycle. Can you look into this and let me know what happened? If I'm stuck on monthly I'd at least like to understand why the switch didn't work.",
+    "_truth": {
+      "expected_category": "billing",
+      "should_escalate": false,
+      "difficulty_bucket": "ambiguous"
+    }
+  },
+  {
+    "ticket_id": "T-0004",
+    "customer_id": "C-002",
+    "order_id": null,
+    "subject": "Recurring charge inconsistency on my Pro account",
+    "body": "I've been a Pro tier member for over a year now and I'm noticing my monthly billing amount has changed without any notification or explanation. Last month I was charged $49.99 but this month it jumped to $64.99. I already have an open ticket about a previous billing concern that was never resolved, and frankly I'm losing confidence in how my account is being managed. I need someone to explain what's going on and correct this immediately or I'll need to reconsider my membership.",
+    "_truth": {
+      "expected_category": "billing",
+      "should_escalate": true,
+      "difficulty_bucket": "ambiguous"
+    }
+  },
+  {
+    "ticket_id": "T-0005",
+    "customer_id": "C-003",
+    "order_id": null,
+    "subject": "Unauthorized charges totaling $47,000+ on our enterprise account - possible fraud",
+    "body": "We've identified multiple unauthorized charges on our enterprise billing account over the past two weeks totaling over $47,000. These transactions were not initiated by anyone on our team and we suspect our account credentials may have been compromised. I need these charges reversed immediately and a full audit of all billing activity on account C-003. If this isn't resolved within 24 hours, our legal department will be filing a formal dispute with our bank and pursuing further action.",
+    "_truth": {
+      "expected_category": "billing",
+      "should_escalate": true,
+      "difficulty_bucket": "should_escalate"
+    }
+  },
+  {
+    "ticket_id": "T-0006",
+    "customer_id": "C-013",
+    "order_id": "O-1036",
+    "subject": "Unauthorized charge on my account - possible fraud",
+    "body": "I'm seeing a charge of $17.99 for order O-1036 that I never placed. I did NOT order an HDMI cable. Someone may have compromised my account. This is the second time I've raised a billing concern that hasn't been resolved, and I'm seriously considering involving my bank's fraud department if this isn't addressed immediately.",
+    "_truth": {
+      "expected_category": "billing",
+      "should_escalate": true,
+      "difficulty_bucket": "should_escalate"
+    }
+  },
+  {
+    "ticket_id": "T-0007",
+    "customer_id": "C-012",
+    "order_id": "O-1012",
+    "subject": "Charged twice for phone charger order",
+    "body": "Hi, I noticed there are two charges of $22.99 on my bank statement from around the time I ordered the phone charger (O-1012). I only placed one order and only received one charger. I'm not sure if one of these is a pending authorization that will drop off or if I was actually double-charged, but it's been over a week now and both still show. Can you look into this?",
+    "_truth": {
+      "expected_category": "billing",
+      "should_escalate": false,
+      "difficulty_bucket": "ambiguous"
+    }
+  },
+  {
+    "ticket_id": "T-0008",
+    "customer_id": "C-022",
+    "order_id": null,
+    "subject": "Double charged for Pro subscription this month",
+    "body": "Hi, I noticed that my credit card was charged twice for my Pro tier subscription this month. I only have one account (C-022) and should only be billed once. Could you please refund the duplicate charge? Thanks, Vera",
+    "_truth": {
+      "expected_category": "billing",
+      "should_escalate": false,
+      "difficulty_bucket": "clear_self_serve"
+    }
+  },
+  {
+    "ticket_id": "T-0009",
+    "customer_id": "C-006",
+    "order_id": null,
+    "subject": "Unauthorized charges on enterprise account - potential fraud",
+    "body": "This is Fatima Hassan, enterprise account C-006. I am seeing multiple unauthorized charges on our company account totaling over $14,000 that no one on my team authorized. I reported a similar billing discrepancy three months ago in a previous ticket that was never resolved, and now the problem has gotten significantly worse. I need this investigated immediately and all unauthorized charges reversed, or I will be escalating this to our legal department and disputing every charge with our bank.",
+    "_truth": {
+      "expected_category": "billing",
+      "should_escalate": true,
+      "difficulty_bucket": "should_escalate"
+    }
+  },
+  {
+    "ticket_id": "T-0010",
+    "customer_id": "C-015",
+    "order_id": "O-1015",
+    "subject": "Duplicate charge on Enterprise Analytics Suite",
+    "body": "Hi, I noticed that my account was charged twice for order O-1015 (Enterprise Analytics Suite, $7,500). The product has been delivered and everything is fine on that end, but I need the duplicate charge reversed. Can you look into this and process a refund for the extra payment? Account ID is C-015. Thanks, Oscar Beltran.",
+    "_truth": {
+      "expected_category": "billing",
+      "should_escalate": false,
+      "difficulty_bucket": "clear_self_serve"
+    }
+  },
+  {
+    "ticket_id": "T-0011",
+    "customer_id": "C-027",
+    "order_id": null,
+    "subject": "Charged twice and can't update my payment method",
+    "body": "Hi, I noticed two charges on my bank statement from your store but I don't recall placing any orders recently. I've only been on the free tier so I'm confused about why I'm being billed at all. Also, when I try to update my payment method in account settings, the page just keeps loading and never saves. Can someone look into both of these issues? I'm starting to wonder if something weird is going on with my account.",
+    "_truth": {
+      "expected_category": "billing",
+      "should_escalate": false,
+      "difficulty_bucket": "ambiguous"
+    }
+  },
+  {
+    "ticket_id": "T-0012",
+    "customer_id": "C-027",
+    "order_id": "O-1043",
+    "subject": "Requesting refund for Lamp Bulb Pack order O-1043",
+    "body": "Hi, I received my Lamp Bulb Pack from order O-1043 but I'd like to return it for a refund. The bulbs are the wrong color temperature for my fixtures. Could you please process a refund of $14.99 back to my original payment method? Thanks, Adele Forsyth.",
+    "_truth": {
+      "expected_category": "billing",
+      "should_escalate": false,
+      "difficulty_bucket": "clear_self_serve"
+    }
+  },
+  {
+    "ticket_id": "T-0013",
+    "customer_id": "C-003",
+    "order_id": "O-1003",
+    "subject": "Need updated invoice for order O-1003",
+    "body": "Hi, I need an updated invoice for order O-1003 (Enterprise Software License, $4999). Our finance department requires the invoice to include our company VAT number for tax reporting purposes. Could you please regenerate the invoice with VAT ID EU372849501 and send it to our billing email on file? Thanks, Carlos Mendes.",
+    "_truth": {
+      "expected_category": "billing",
+      "should_escalate": false,
+      "difficulty_bucket": "clear_self_serve"
+    }
+  },
+  {
+    "ticket_id": "T-0014",
+    "customer_id": "C-016",
+    "order_id": "O-1037",
+    "subject": "Double charged for Earbud Charging Case - Order O-1037",
+    "body": "Hi, I just noticed I was charged twice for my Earbud Charging Case (Order O-1037). The item was $39.99 but I'm seeing two charges of that amount on my credit card statement. Could you please refund the duplicate charge? Thanks, Priya",
+    "_truth": {
+      "expected_category": "billing",
+      "should_escalate": false,
+      "difficulty_bucket": "clear_self_serve"
+    }
+  },
+  {
+    "ticket_id": "T-0015",
+    "customer_id": "C-005",
+    "order_id": "O-1046",
+    "subject": "Charged twice for Wrist Rest - O-1046",
+    "body": "I'm seeing two charges of $24.99 on my statement for order O-1046 but I only received one Wrist Rest. I've raised multiple tickets before and nothing ever gets resolved. At this point I'm not even sure if one of those charges is from something else or if it's a duplicate, but either way something is wrong with my billing and I need this looked into properly this time.",
+    "_truth": {
+      "expected_category": "billing",
+      "should_escalate": true,
+      "difficulty_bucket": "ambiguous"
+    }
+  },
+  {
+    "ticket_id": "T-0016",
+    "customer_id": "C-024",
+    "order_id": null,
+    "subject": "Unauthorized charges on my account - possible fraud",
+    "body": "I'm seeing charges on my credit card statement from your company that I absolutely did not authorize. There are three separate transactions totaling over $187 that I never made. I've already submitted two tickets about billing discrepancies that were never resolved, and now this looks like someone has compromised my account. If this isn't resolved immediately and refunded, I will be filing a dispute with my bank and reporting this as fraud to the FTC.",
+    "_truth": {
+      "expected_category": "billing",
+      "should_escalate": true,
+      "difficulty_bucket": "should_escalate"
+    }
+  },
+  {
+    "ticket_id": "T-0017",
+    "customer_id": "C-013",
+    "order_id": "O-1013",
+    "subject": "Requesting refund for Monitor Stand - Order O-1013",
+    "body": "Hi, I'd like to request a refund for the Monitor Stand from order O-1013. It was delivered but it doesn't fit my desk setup as I expected. I see it should still be eligible for a refund so please process that back to my original payment method. Thanks, Miguel Ortiz.",
+    "_truth": {
+      "expected_category": "billing",
+      "should_escalate": false,
+      "difficulty_bucket": "clear_self_serve"
+    }
+  },
+  {
+    "ticket_id": "T-0018",
+    "customer_id": "C-003",
+    "order_id": null,
+    "subject": "Need to update payment method on file",
+    "body": "Hi, I need to update the credit card associated with our enterprise account. The current card on file is expiring at the end of this month and I'd like to replace it with a new one before our next billing cycle. Can you point me to where I can do this, or handle it on your end? Thanks, Carlos Mendes, account C-003.",
+    "_truth": {
+      "expected_category": "billing",
+      "should_escalate": false,
+      "difficulty_bucket": "clear_self_serve"
+    }
+  },
+  {
+    "ticket_id": "T-0019",
+    "customer_id": "C-005",
+    "order_id": null,
+    "subject": "Double charged for Pro subscription this month",
+    "body": "Hi, I noticed I was charged twice for my Pro tier subscription this billing cycle. I can see two identical charges of $49.99 on my credit card statement dated the same day. Can you please refund the duplicate charge? My account email is evan.whitley@email.com.",
+    "_truth": {
+      "expected_category": "billing",
+      "should_escalate": false,
+      "difficulty_bucket": "clear_self_serve"
+    }
+  },
+  {
+    "ticket_id": "T-0020",
+    "customer_id": "C-014",
+    "order_id": null,
+    "subject": "Unauthorized charges appearing on my account",
+    "body": "I noticed two charges on my bank statement linked to your platform but I never upgraded from the free tier and I haven't purchased anything in weeks. I didn't authorize these transactions and I'm concerned someone may have accessed my account. I need these charges reversed immediately and an explanation of how this happened.",
+    "_truth": {
+      "expected_category": "billing",
+      "should_escalate": true,
+      "difficulty_bucket": "ambiguous"
+    }
+  },
+  {
+    "ticket_id": "T-0021",
+    "customer_id": "C-020",
+    "order_id": null,
+    "subject": "Discrepancy in enterprise billing statement",
+    "body": "Hi, I've been reviewing our monthly invoices and noticed that the amounts charged over the last three months don't seem to align with what was agreed upon in our enterprise contract. The differences are small but consistent, and I'm not sure if it's a pricing adjustment we weren't notified about or an error on your end. I still have an open ticket from a while back that never got resolved, so I'm hoping someone can actually look into this properly. Can you provide a detailed breakdown of how our charges are being calculated?",
+    "_truth": {
+      "expected_category": "billing",
+      "should_escalate": false,
+      "difficulty_bucket": "ambiguous"
+    }
+  },
+  {
+    "ticket_id": "T-0022",
+    "customer_id": "C-018",
+    "order_id": null,
+    "subject": "Double charge on my account and need to update payment method",
+    "body": "Hi, I noticed my account was charged twice for what looks like the same transaction even though I'm on the free tier and shouldn't be getting charged at all. Can you look into that and reverse the extra charge? Also, I need to update my credit card on file since my old one is expiring next month \u2014 where do I go to do that? Thanks, Rosa",
+    "_truth": {
+      "expected_category": "billing",
+      "should_escalate": false,
+      "difficulty_bucket": "clear_self_serve"
+    }
+  },
+  {
+    "ticket_id": "T-0023",
+    "customer_id": "C-008",
+    "order_id": "O-1008",
+    "subject": "Delivery confirmation but package not at door + need updated tracking email",
+    "body": "Hi, my order O-1008 shows as delivered but I actually did find it \u2014 it was left at my back door instead of the front porch as requested. Not a huge deal but I'd like to note that for future deliveries. Also, I never received the shipping confirmation email for this order. Can you resend the tracking details to my email on file? Thanks, Hana",
+    "_truth": {
+      "expected_category": "shipping",
+      "should_escalate": false,
+      "difficulty_bucket": "clear_self_serve"
+    }
+  },
+  {
+    "ticket_id": "T-0024",
+    "customer_id": "C-016",
+    "order_id": "O-1016",
+    "subject": "Tracking not updating for order O-1016",
+    "body": "Hi, I ordered the Noise-Cancelling Earbuds (order O-1016) and the status shows shipped, but the tracking number hasn't updated in 3 days. It still shows the package at the origin facility. Can you check on the shipping status and let me know when I can expect delivery? Thanks, Priya",
+    "_truth": {
+      "expected_category": "shipping",
+      "should_escalate": false,
+      "difficulty_bucket": "clear_self_serve"
+    }
+  },
+  {
+    "ticket_id": "T-0025",
+    "customer_id": "C-018",
+    "order_id": "O-1018",
+    "subject": "Delivery issue and product concern - Order O-1018",
+    "body": "Hi, my order O-1018 shows as delivered but I only found a partially opened package on my doorstep two days after the expected delivery date \u2014 the box was clearly damaged and looked like it had been sitting in the rain. The webcam light ring inside seems to work but one of the brightness settings flickers intermittently, and I'm not sure if that's from the shipping damage or a defect. I'd like to know what my options are here \u2014 can I get a replacement sent with better packaging, or should I just return this one for a refund? Also, is there a way to flag my address for more careful delivery handling going forward?",
+    "_truth": {
+      "expected_category": "shipping",
+      "should_escalate": false,
+      "difficulty_bucket": "ambiguous"
+    }
+  },
+  {
+    "ticket_id": "T-0026",
+    "customer_id": "C-016",
+    "order_id": "O-1016",
+    "subject": "Shipping seems stuck - need this resolved immediately",
+    "body": "Hi, this is Priya Sharma, account C-016. My order O-1016 (Noise-Cancelling Earbuds) shows as shipped but the tracking hasn't updated in 6 days and the estimated delivery was 4 days ago. I've been a Pro member for almost a year and I've never had this kind of issue before. I need someone to actually investigate what happened to my package \u2014 I'm not interested in being told to just wait longer, I've already waited well past the delivery window.",
+    "_truth": {
+      "expected_category": "shipping",
+      "should_escalate": true,
+      "difficulty_bucket": "ambiguous"
+    }
+  },
+  {
+    "ticket_id": "T-0027",
+    "customer_id": "C-028",
+    "order_id": "O-1028",
+    "subject": "Delivery confirmation but I never received anything?",
+    "body": "I got an email saying my Pro Monthly subscription renewal (O-1028) was 'delivered' but this is a digital subscription \u2014 what exactly was delivered and where? I'm confused because my account doesn't seem to reflect the renewal either. I've been a Pro member for over a year and this is the first time I've seen a shipping status on a subscription charge. Can someone clarify what's going on with my account?",
+    "_truth": {
+      "expected_category": "shipping",
+      "should_escalate": false,
+      "difficulty_bucket": "ambiguous"
+    }
+  },
+  {
+    "ticket_id": "T-0028",
+    "customer_id": "C-030",
+    "order_id": "O-1030",
+    "subject": "Delivery issue with external hard drive order",
+    "body": "Hi, I received a notification that my External Hard Drive (O-1030) was delivered but I'm not entirely sure it actually arrived at my door. I was home most of the day and didn't hear a knock or see anyone drop anything off. I checked around my porch and with neighbors but nothing turned up. I'm not sure if it was misdelivered or stolen or what \u2014 can you look into this for me?",
+    "_truth": {
+      "expected_category": "shipping",
+      "should_escalate": false,
+      "difficulty_bucket": "ambiguous"
+    }
+  },
+  {
+    "ticket_id": "T-0029",
+    "customer_id": "C-013",
+    "order_id": "O-1036",
+    "subject": "Package marked delivered but never received \u2014 second time this has happened",
+    "body": "This is Miguel Ortiz, account C-013. Order O-1036 shows as delivered but I never received the HDMI cable. This is the SECOND time I've had a delivery issue that hasn't been resolved \u2014 my previous ticket is still open with no resolution. I've been a Pro tier member for nearly two years and I'm honestly considering filing a complaint with the BBB and disputing charges with my bank if this pattern of lost packages and ignored tickets continues. I need someone with actual authority to contact me immediately.",
+    "_truth": {
+      "expected_category": "shipping",
+      "should_escalate": true,
+      "difficulty_bucket": "should_escalate"
+    }
+  },
+  {
+    "ticket_id": "T-0030",
+    "customer_id": "C-017",
+    "order_id": "O-1038",
+    "subject": "Delivery location wrong + need refund for bag strap",
+    "body": "Hi, my order O-1038 was marked as delivered but it was left at the wrong address \u2014 my neighbor brought it over two days later. The bag strap replacement doesn't actually fit my bag anyway so I'd like to return it for a refund. Can you send me the return label and process the $12.99 refund once it's shipped back? Thanks, Quentin Hayes.",
+    "_truth": {
+      "expected_category": "shipping",
+      "should_escalate": false,
+      "difficulty_bucket": "clear_self_serve"
+    }
+  },
+  {
+    "ticket_id": "T-0031",
+    "customer_id": "C-008",
+    "order_id": "O-1008",
+    "subject": "Delivery address was wrong on order O-1008",
+    "body": "Hi, my order O-1008 (the 4K Webcam) shows as delivered but it was sent to my old address. I updated my shipping address a few weeks ago so I'm not sure why it still went to the previous one. Can you help me figure out what happened and how I can get this resolved? Thanks, Hana",
+    "_truth": {
+      "expected_category": "shipping",
+      "should_escalate": false,
+      "difficulty_bucket": "clear_self_serve"
+    }
+  },
+  {
+    "ticket_id": "T-0032",
+    "customer_id": "C-019",
+    "order_id": "O-1019",
+    "subject": "Shipping confirmation for subscription renewal?",
+    "body": "Hi, I received a delivery notification for order O-1019 which is my Pro Annual subscription renewal, but I'm confused because there's nothing physical to ship. I got an email saying it was 'delivered' to my address and now I'm wondering if something was supposed to arrive or if this is just how digital renewals work. I want to make sure I'm not missing a welcome kit or something that might have been left at my door.",
+    "_truth": {
+      "expected_category": "shipping",
+      "should_escalate": false,
+      "difficulty_bucket": "ambiguous"
+    }
+  },
+  {
+    "ticket_id": "T-0033",
+    "customer_id": "C-001",
+    "order_id": "O-1001",
+    "subject": "Package shows delivered but I never received it",
+    "body": "Hi, my order O-1001 shows as delivered but I never got the package. I checked with my neighbors and looked around my porch and there's nothing there. Can you help me figure out what happened or send a replacement? Thanks, Alice",
+    "_truth": {
+      "expected_category": "shipping",
+      "should_escalate": false,
+      "difficulty_bucket": "clear_self_serve"
+    }
+  },
+  {
+    "ticket_id": "T-0034",
+    "customer_id": "C-002",
+    "order_id": "O-1002",
+    "subject": "Shipping delay + wrong delivery estimate on Smart Home Hub",
+    "body": "Hey, my order O-1002 shipped a while ago but the tracking hasn't updated in days and the estimated delivery date on my account page still shows a date that already passed. I'm also noticing my previous support ticket was never resolved which is frustrating as a Pro member. Can someone look into where my package actually is and also update me on whether I should just request a refund at this point? I need this for a project deadline next week.",
+    "_truth": {
+      "expected_category": "shipping",
+      "should_escalate": false,
+      "difficulty_bucket": "ambiguous"
+    }
+  },
+  {
+    "ticket_id": "T-0035",
+    "customer_id": "C-002",
+    "order_id": "O-1032",
+    "subject": "Delivered package never received + still waiting on resolution from last ticket",
+    "body": "I'm a Pro tier member and this is now my SECOND unresolved issue \u2014 my order O-1032 (Smart Bulbs 4-Pack) shows as delivered but I never received it, and no one has followed up on my previous ticket from weeks ago. At this point I'm starting to question whether my account has been compromised since someone may have changed my delivery address without my knowledge. I need an immediate refund and I want someone to investigate potential unauthorized access to my account. If this isn't resolved promptly I'll be filing a complaint with the FTC and disputing the charge with my bank.",
+    "_truth": {
+      "expected_category": "shipping",
+      "should_escalate": true,
+      "difficulty_bucket": "should_escalate"
+    }
+  },
+  {
+    "ticket_id": "T-0036",
+    "customer_id": "C-008",
+    "order_id": "O-1034",
+    "subject": "Order O-1034 delivered but I never received it",
+    "body": "Hi, my order O-1034 (Webcam Privacy Cover) shows as delivered but I never actually received the package. I've checked with my neighbors and looked around my porch \u2014 nothing. Could you help me with a replacement or refund? Thanks, Hana",
+    "_truth": {
+      "expected_category": "shipping",
+      "should_escalate": false,
+      "difficulty_bucket": "clear_self_serve"
+    }
+  },
+  {
+    "ticket_id": "T-0037",
+    "customer_id": "C-007",
+    "order_id": "O-1007",
+    "subject": "Order O-1007 shipping to wrong address - possible account compromise",
+    "body": "I just placed order O-1007 for a Bluetooth Speaker two days ago and I noticed the shipping address has been changed to somewhere I don't recognize. I did NOT change this address and I'm concerned someone has accessed my account without my permission. I need this order stopped immediately before it ships to whoever did this. I also noticed a failed login attempt notification from an IP I don't recognize \u2014 please lock my account and investigate this right away.",
+    "_truth": {
+      "expected_category": "shipping",
+      "should_escalate": true,
+      "difficulty_bucket": "should_escalate"
+    }
+  },
+  {
+    "ticket_id": "T-0038",
+    "customer_id": "C-029",
+    "order_id": "O-1044",
+    "subject": "Package marked delivered but stolen - filing police report",
+    "body": "My order O-1044 was marked as delivered yesterday but I never received it. I checked my doorbell camera and can see someone walking up and taking the package off my porch. I'm filing a police report today and need documentation from your company for the report including the carrier tracking details and delivery confirmation. I also want to know what you're going to do about replacing my order because this is unacceptable that your delivery driver just left it out in the open.",
+    "_truth": {
+      "expected_category": "shipping",
+      "should_escalate": true,
+      "difficulty_bucket": "should_escalate"
+    }
+  },
+  {
+    "ticket_id": "T-0039",
+    "customer_id": "C-016",
+    "order_id": "O-1037",
+    "subject": "Order O-1037 delivered to wrong address",
+    "body": "Hi, my order O-1037 (Earbud Charging Case) shows as delivered but it was left at the wrong house. I checked with my neighbors and no one has it. Can you help me get a replacement or refund? My correct address is on file so I'm not sure what happened.",
+    "_truth": {
+      "expected_category": "shipping",
+      "should_escalate": false,
+      "difficulty_bucket": "clear_self_serve"
+    }
+  },
+  {
+    "ticket_id": "T-0040",
+    "customer_id": "C-004",
+    "order_id": "O-1004",
+    "subject": "Package delivered but I never received it",
+    "body": "Hi, my order O-1004 shows as delivered but I never got it. I checked around my door, mailbox, and with neighbors but nothing. It's just a USB-C cable but I'd like a refund or replacement if possible. Thanks, Dina",
+    "_truth": {
+      "expected_category": "shipping",
+      "should_escalate": false,
+      "difficulty_bucket": "clear_self_serve"
+    }
+  },
+  {
+    "ticket_id": "T-0041",
+    "customer_id": "C-014",
+    "order_id": "O-1014",
+    "subject": "Cancelled order but package might have shipped?",
+    "body": "Hi, I'm confused about order O-1014 for a Wireless Mouse. I got a cancellation email but then today I received a shipping notification from what looks like your carrier with a tracking number. I never requested the cancellation in the first place and now I don't know if something is actually arriving or not. If something does show up, I don't want to be charged for an order I didn't cancel \u2014 can someone please figure out what's going on here?",
+    "_truth": {
+      "expected_category": "shipping",
+      "should_escalate": true,
+      "difficulty_bucket": "ambiguous"
+    }
+  },
+  {
+    "ticket_id": "T-0042",
+    "customer_id": "C-002",
+    "order_id": "O-1002",
+    "subject": "Unacceptable shipping delay AGAIN + unauthorized address change on my account",
+    "body": "This is Brandon Reeves, Pro tier member. My order O-1002 (Smart Home Hub) shows as shipped but it's been 9 days with no movement on tracking, and this is the SECOND time I've had a shipping issue go unresolved \u2014 my last ticket was never fixed. More concerning, I just noticed my shipping address was changed to somewhere in Texas that I don't recognize, which I absolutely did not authorize. I need to know if my package was diverted to this fraudulent address and I want my account secured immediately. If this isn't resolved today I will be filing a complaint with the FTC and disputing the charge with my bank.",
+    "_truth": {
+      "expected_category": "shipping",
+      "should_escalate": true,
+      "difficulty_bucket": "should_escalate"
+    }
+  },
+  {
+    "ticket_id": "T-0043",
+    "customer_id": "C-013",
+    "order_id": "O-1013",
+    "subject": "Refund request for Monitor Stand - Order O-1013",
+    "body": "Hi, I'd like to request a refund for the Monitor Stand I ordered (O-1013, $49.99). It arrived but it's not quite what I expected and I'd like to return it. Please process the refund to my original payment method. Thanks, Miguel Ortiz (C-013).",
+    "_truth": {
+      "expected_category": "refund",
+      "should_escalate": false,
+      "difficulty_bucket": "clear_self_serve"
+    }
+  },
+  {
+    "ticket_id": "T-0044",
+    "customer_id": "C-009",
+    "order_id": "O-1050",
+    "subject": "Need refund for mousepad - not what I expected at all",
+    "body": "Hi, I received the Mousepad XL from order O-1050 and honestly it's not what I was expecting based on the product listing. The texture feels completely different from what was described and it doesn't lay flat on my desk. I've already had three other tickets that nobody has resolved so I'm really losing patience here. I'd like a refund processed for this item.",
+    "_truth": {
+      "expected_category": "refund",
+      "should_escalate": false,
+      "difficulty_bucket": "ambiguous"
+    }
+  },
+  {
+    "ticket_id": "T-0045",
+    "customer_id": "C-023",
+    "order_id": "O-1023",
+    "subject": "Want to cancel and get refund but not sure if I should wait",
+    "body": "Hi, I ordered a Tablet Stand (O-1023) about a day ago and now I'm second-guessing whether I actually need it. It still says processing so I'm hoping I can just get my $34.99 back. The thing is my friend said they might have one I can borrow, but they haven't confirmed yet. Can you go ahead and process the refund or is there a way to put this on hold until I decide? I don't want to miss the window if there is one.",
+    "_truth": {
+      "expected_category": "refund",
+      "should_escalate": false,
+      "difficulty_bucket": "ambiguous"
+    }
+  },
+  {
+    "ticket_id": "T-0046",
+    "customer_id": "C-010",
+    "order_id": "O-1010",
+    "subject": "Refund request for Standing Desk Converter O-1010",
+    "body": "Hi, I'd like to request a refund for my Standing Desk Converter from order O-1010. I decided to go with a different setup for my home office. The order shows as shipped but I haven't received it yet \u2014 can you process the refund and let me know if I need to refuse delivery or return it once it arrives? Thanks, Jasmine",
+    "_truth": {
+      "expected_category": "refund",
+      "should_escalate": false,
+      "difficulty_bucket": "clear_self_serve"
+    }
+  },
+  {
+    "ticket_id": "T-0047",
+    "customer_id": "C-019",
+    "order_id": "O-1019",
+    "subject": "Refund request for Pro Annual renewal I didn't authorize",
+    "body": "Hi, I noticed a charge of $119.88 on my account for order O-1019 which appears to be my Pro Annual subscription renewal. I don't recall agreeing to auto-renew and I'm fairly certain I turned that off months ago, though I can't find any confirmation email about the cancellation. I'd like a full refund since I didn't intentionally authorize this renewal, and I'm concerned about how my account settings were handled. I've been a loyal customer for over a year and this feels like a breach of trust.",
+    "_truth": {
+      "expected_category": "refund",
+      "should_escalate": true,
+      "difficulty_bucket": "ambiguous"
+    }
+  },
+  {
+    "ticket_id": "T-0048",
+    "customer_id": "C-002",
+    "order_id": "O-1002",
+    "subject": "Demanding immediate refund for Smart Home Hub - unacceptable ongoing issues with your company",
+    "body": "This is Brandon Reeves, account C-002. I need an immediate refund for order O-1002 (Smart Home Hub, $89.50). I already have a prior ticket that was never resolved and now I'm dealing with yet another issue \u2014 this is completely unacceptable for a Pro tier customer. If this isn't handled within 24 hours, I will be filing a dispute with my credit card company and escalating to consumer protection authorities.",
+    "_truth": {
+      "expected_category": "refund",
+      "should_escalate": true,
+      "difficulty_bucket": "should_escalate"
+    }
+  },
+  {
+    "ticket_id": "T-0049",
+    "customer_id": "C-017",
+    "order_id": "O-1048",
+    "subject": "Demanding refund for cancelled order O-1048 - 6th unresolved issue",
+    "body": "This is now my SIXTH time reaching out about problems that never get resolved. Order O-1048 for a Replacement Zipper was cancelled without my consent and now I'm being told I can't get my $8.99 back. This is absolutely unacceptable and at this point I'm considering filing a complaint with the FTC and my state attorney general's office for deceptive business practices. I want my refund processed immediately or I will be pursuing this through consumer protection channels.",
+    "_truth": {
+      "expected_category": "refund",
+      "should_escalate": true,
+      "difficulty_bucket": "should_escalate"
+    }
+  },
+  {
+    "ticket_id": "T-0050",
+    "customer_id": "C-017",
+    "order_id": "O-1017",
+    "subject": "Demanding immediate refund for lost order O-1017 - 6th unresolved issue",
+    "body": "This is Quentin Hayes, account C-017. My order O-1017 for a Laptop Sleeve was marked as lost and I still haven't received my $29.99 refund. I now have SIX unresolved tickets with your company and not a single one has been properly handled. I am formally requesting that this be escalated to a supervisor immediately, and if this is not resolved within 48 hours I will be filing a complaint with the Better Business Bureau and pursuing this through small claims court. This pattern of negligence is unacceptable.",
+    "_truth": {
+      "expected_category": "refund",
+      "should_escalate": true,
+      "difficulty_bucket": "should_escalate"
+    }
+  },
+  {
+    "ticket_id": "T-0051",
+    "customer_id": "C-003",
+    "order_id": "O-1003",
+    "subject": "Refund request for order O-1003",
+    "body": "Hi, I need to request a refund for order O-1003, the Enterprise Software License for $4,999. We ended up going with a different vendor solution before deployment. I understand there may be a process for this \u2014 can you let me know what steps are needed on my end? Thanks, Carlos Mendes, account C-003.",
+    "_truth": {
+      "expected_category": "refund",
+      "should_escalate": false,
+      "difficulty_bucket": "clear_self_serve"
+    }
+  },
+  {
+    "ticket_id": "T-0052",
+    "customer_id": "C-008",
+    "order_id": "O-1034",
+    "subject": "Refund request for privacy cover + billing concern",
+    "body": "Hi, I received my Webcam Privacy Cover from order O-1034 but it doesn't stick well to my laptop bezel \u2014 it keeps sliding off after a few minutes. I'd like a refund since it's essentially not functional for me. Also, I noticed I was charged twice on my statement for what looks like the same amount ($9.99) on the same day, though I only see one order in my account. Can someone look into both of these issues? I've been a Pro member for a year now and would appreciate a quick resolution.",
+    "_truth": {
+      "expected_category": "refund",
+      "should_escalate": false,
+      "difficulty_bucket": "ambiguous"
+    }
+  },
+  {
+    "ticket_id": "T-0053",
+    "customer_id": "C-029",
+    "order_id": "O-1029",
+    "subject": "Refund request for Wireless Charger Pad order O-1029",
+    "body": "Hi, I placed an order for a Wireless Charger Pad (O-1029) a few days ago but I no longer need it. I see it's already shipped but I'd like to request a refund. Can you please process this for me? Thank you, Camila Reyes.",
+    "_truth": {
+      "expected_category": "refund",
+      "should_escalate": false,
+      "difficulty_bucket": "clear_self_serve"
+    }
+  },
+  {
+    "ticket_id": "T-0054",
+    "customer_id": "C-002",
+    "order_id": "O-1002",
+    "subject": "Refund request for Smart Home Hub - not what I expected",
+    "body": "Hi, I ordered the Smart Home Hub (O-1002) and it's currently on its way to me, but after doing more research I'm not sure it's going to work with my existing setup the way I thought it would. I'd like to get a refund but I'm not sure if I should refuse delivery or wait until it arrives and send it back. I also still have an open ticket from a few weeks ago that never got resolved, so I'm a bit frustrated with the support experience overall. Can you just process the refund now so I don't have to deal with the return hassle?",
+    "_truth": {
+      "expected_category": "refund",
+      "should_escalate": false,
+      "difficulty_bucket": "ambiguous"
+    }
+  },
+  {
+    "ticket_id": "T-0055",
+    "customer_id": "C-019",
+    "order_id": "O-1039",
+    "subject": "Requesting immediate refund for O-1039 \u2014 4th attempt, considering filing chargeback",
+    "body": "This is my fourth time reaching out about getting a refund for order O-1039, the Extra Seats add-on for $49.99. I've been a Pro tier customer for well over a year and I'm frankly shocked at how poorly this has been handled. If this isn't resolved within 24 hours I will be initiating a chargeback with my bank and filing a complaint with the BBB. I expect a full refund processed immediately \u2014 Samir Joshi, account C-019.",
+    "_truth": {
+      "expected_category": "refund",
+      "should_escalate": true,
+      "difficulty_bucket": "should_escalate"
+    }
+  },
+  {
+    "ticket_id": "T-0056",
+    "customer_id": "C-007",
+    "order_id": "O-1007",
+    "subject": "Need refund for speaker order - possible unauthorized purchase",
+    "body": "Hi, I just noticed order O-1007 for a Bluetooth Speaker on my account and I'm not entirely sure I placed this order. I only created this account a week ago and I don't remember buying a speaker for $79.99. I'd like a refund processed immediately since I'm worried someone else may have accessed my account, but I also can't say for certain it wasn't me since I was browsing late one night. Can you please look into this and get me my money back?",
+    "_truth": {
+      "expected_category": "refund",
+      "should_escalate": true,
+      "difficulty_bucket": "ambiguous"
+    }
+  },
+  {
+    "ticket_id": "T-0057",
+    "customer_id": "C-013",
+    "order_id": "O-1013",
+    "subject": "Refund request for Monitor Stand - Order O-1013",
+    "body": "Hi, I'd like to request a refund for the Monitor Stand I ordered (O-1013, $49.99). It arrived but doesn't fit my desk setup as I expected. Since it's eligible for a refund, could you please process that for me? Thanks, Miguel Ortiz.",
+    "_truth": {
+      "expected_category": "refund",
+      "should_escalate": false,
+      "difficulty_bucket": "clear_self_serve"
+    }
+  },
+  {
+    "ticket_id": "T-0058",
+    "customer_id": "C-010",
+    "order_id": "O-1035",
+    "subject": "Refund request for Anti-Fatigue Mat (Order O-1035)",
+    "body": "Hi, I'd like to request a refund for the Anti-Fatigue Mat from order O-1035. It arrived but it's not the quality I expected for the price \u2014 the material feels thin and cheap. I'd like to return it and get my $89 back. Please let me know the next steps. Thanks, Jasmine",
+    "_truth": {
+      "expected_category": "refund",
+      "should_escalate": false,
+      "difficulty_bucket": "clear_self_serve"
+    }
+  },
+  {
+    "ticket_id": "T-0059",
+    "customer_id": "C-004",
+    "order_id": null,
+    "subject": "Someone else is logged into my account - unauthorized access",
+    "body": "I just received an email notification that my password was changed but I did NOT change it. I can no longer log into my account and when I tried the recovery email it says the recovery email has been updated too. Someone has taken over my account and I'm really worried they have access to my saved payment information. Please help me regain access immediately \u2014 my email is dina.park88@gmail.com and I can verify my identity however needed.",
+    "_truth": {
+      "expected_category": "technical",
+      "should_escalate": true,
+      "difficulty_bucket": "should_escalate"
+    }
+  },
+  {
+    "ticket_id": "T-0060",
+    "customer_id": "C-005",
+    "order_id": "O-1046",
+    "subject": "Can't download invoice for order O-1046",
+    "body": "Hi, I need to download the invoice for my order O-1046 (the Wrist Rest) but when I click the download button in my account, nothing happens. I've tried Chrome and Firefox, cleared my cache, same issue. Can you either fix this or email me the invoice PDF directly? Thanks, Evan.",
+    "_truth": {
+      "expected_category": "technical",
+      "should_escalate": false,
+      "difficulty_bucket": "clear_self_serve"
+    }
+  },
+  {
+    "ticket_id": "T-0061",
+    "customer_id": "C-011",
+    "order_id": "O-1047",
+    "subject": "Cannot access Enterprise Training Hours portal",
+    "body": "Hi, I purchased Enterprise Training Hours (order O-1047) and the training portal keeps giving me a 403 Forbidden error when I try to log in. I've cleared my cache and tried multiple browsers with no luck. Can you please check if my account permissions are set up correctly? My user ID is tied to the email on file for account C-011.",
+    "_truth": {
+      "expected_category": "technical",
+      "should_escalate": false,
+      "difficulty_bucket": "clear_self_serve"
+    }
+  },
+  {
+    "ticket_id": "T-0062",
+    "customer_id": "C-009",
+    "order_id": null,
+    "subject": "Site keeps logging me out and pages won't load properly",
+    "body": "Every time I try to browse your site I get randomly logged out after a few minutes and half the pages just show a blank white screen or load without any images. I've tried different browsers and clearing my cache but nothing works. This has been going on for over a week now and I already submitted tickets about other issues that never got resolved so I'm starting to wonder if there's something wrong with my account specifically. Can someone actually look into this?",
+    "_truth": {
+      "expected_category": "technical",
+      "should_escalate": false,
+      "difficulty_bucket": "ambiguous"
+    }
+  },
+  {
+    "ticket_id": "T-0063",
+    "customer_id": "C-003",
+    "order_id": null,
+    "subject": "Unable to export bulk order history report from dashboard",
+    "body": "Hi, I'm trying to export our full order history as a CSV from the enterprise dashboard but the download button just spins and never completes. I've tried both Chrome and Firefox, cleared cache, same result. Can you point me to an alternative method or fix for generating these reports? Account is under Carlos Mendes, enterprise tier.",
+    "_truth": {
+      "expected_category": "technical",
+      "should_escalate": false,
+      "difficulty_bucket": "clear_self_serve"
+    }
+  },
+  {
+    "ticket_id": "T-0064",
+    "customer_id": "C-002",
+    "order_id": "O-1002",
+    "subject": "Smart Home Hub connectivity dropping after firmware update - second time reaching out",
+    "body": "My Smart Home Hub from order O-1002 updated its firmware automatically during shipping or right after setup and now it won't maintain a stable connection to any of my devices for more than a few minutes. I've already factory reset it twice and tried both 2.4GHz and 5GHz networks with no luck. I raised a similar concern before that never got resolved, and honestly as a Pro member I expected better support \u2014 I'm starting to question whether this is a hardware defect or a known software issue you haven't disclosed. I need someone who can actually dig into this technically, not just run me through the basic troubleshooting script again.",
+    "_truth": {
+      "expected_category": "technical",
+      "should_escalate": true,
+      "difficulty_bucket": "ambiguous"
+    }
+  },
+  {
+    "ticket_id": "T-0065",
+    "customer_id": "C-009",
+    "order_id": "O-1050",
+    "subject": "Mousepad XL tracking says delivered but website won't update my order history",
+    "body": "My order O-1050 shows as delivered according to the shipping email but when I log into my account the order status page either shows nothing or gives me a loading error. I've tried different browsers and clearing cache. This is the third time I've had issues with your site not working properly and I'm starting to wonder if there's something wrong with my account. Can someone look into why my order history keeps glitching out?",
+    "_truth": {
+      "expected_category": "technical",
+      "should_escalate": false,
+      "difficulty_bucket": "ambiguous"
+    }
+  },
+  {
+    "ticket_id": "T-0066",
+    "customer_id": "C-014",
+    "order_id": null,
+    "subject": "Can't reset password and notifications won't turn off",
+    "body": "Hi, I've been trying to reset my password for the past hour but the reset email never arrives in my inbox (I've checked spam too). Also, I keep getting promotional email notifications even though I've toggled them off in my account settings twice now. Can someone help me fix both of these issues? My email is the Gmail address I signed up with 2 months ago.",
+    "_truth": {
+      "expected_category": "technical",
+      "should_escalate": false,
+      "difficulty_bucket": "clear_self_serve"
+    }
+  },
+  {
+    "ticket_id": "T-0067",
+    "customer_id": "C-029",
+    "order_id": null,
+    "subject": "Page keeps crashing when I try to browse",
+    "body": "Every time I try to scroll through products on your site, the page freezes and then crashes after about 30 seconds. I've tried different browsers and it's the same thing. I just signed up last week and honestly haven't been able to use the site properly at all. Is there something wrong with my account or is this a known issue?",
+    "_truth": {
+      "expected_category": "technical",
+      "should_escalate": false,
+      "difficulty_bucket": "ambiguous"
+    }
+  },
+  {
+    "ticket_id": "T-0068",
+    "customer_id": "C-002",
+    "order_id": null,
+    "subject": "Account compromised - unauthorized access and settings changed",
+    "body": "I'm a Pro tier member and I believe my account has been compromised. I noticed my email address was changed without my authorization, my saved payment methods were accessed, and my security settings were altered. I already submitted a ticket about a related login issue weeks ago (still unresolved, by the way) and now the situation has clearly escalated. I need this locked down and investigated immediately \u2014 my name is Brandon Reeves and I cannot access my own account properly anymore.",
+    "_truth": {
+      "expected_category": "technical",
+      "should_escalate": true,
+      "difficulty_bucket": "should_escalate"
+    }
+  },
+  {
+    "ticket_id": "T-0069",
+    "customer_id": "C-005",
+    "order_id": null,
+    "subject": "Can't change notification settings + dark mode not working on iOS app",
+    "body": "Hey, I'm trying to update my email notification preferences in my account settings but the toggle switches aren't responding when I click them. Also, I enabled dark mode in the app (iPhone, latest version) but it keeps reverting back to light mode every time I close and reopen it. Can you point me in the right direction for both of these? Thanks, Evan",
+    "_truth": {
+      "expected_category": "technical",
+      "should_escalate": false,
+      "difficulty_bucket": "clear_self_serve"
+    }
+  },
+  {
+    "ticket_id": "T-0070",
+    "customer_id": "C-012",
+    "order_id": null,
+    "subject": "Account showing someone else's information when I log in",
+    "body": "When I log into my account I'm seeing what appears to be another customer's saved addresses and payment methods. This started happening yesterday and it's really alarming \u2014 I can see their full name and partial card numbers. I changed my password immediately but the issue is still there. I'm concerned about whether my own information might be visible to someone else too.",
+    "_truth": {
+      "expected_category": "technical",
+      "should_escalate": true,
+      "difficulty_bucket": "ambiguous"
+    }
+  },
+  {
+    "ticket_id": "T-0071",
+    "customer_id": "C-028",
+    "order_id": "O-1028",
+    "subject": "Account compromised - unauthorized subscription renewal",
+    "body": "I believe my account has been compromised. I did not authorize the Pro Monthly renewal on order O-1028 and I'm seeing login activity from locations I don't recognize. Someone appears to have changed my recovery email as well. I need this investigated immediately and my account secured \u2014 I've been a Pro member for over a year and I'm very concerned about what other data may have been accessed.",
+    "_truth": {
+      "expected_category": "technical",
+      "should_escalate": true,
+      "difficulty_bucket": "should_escalate"
+    }
+  },
+  {
+    "ticket_id": "T-0072",
+    "customer_id": "C-008",
+    "order_id": null,
+    "subject": "Pro features not loading correctly on multiple devices",
+    "body": "For the past week or so, several of the pro-tier features on my account seem to be partially broken \u2014 the advanced filtering and saved collections either take forever to load or just show a blank screen. I've tried on my laptop, phone, and tablet with different browsers and it's the same everywhere. I'm not sure if this is a known issue or something specific to my account, but it's really frustrating given what I'm paying for the pro membership.",
+    "_truth": {
+      "expected_category": "technical",
+      "should_escalate": false,
+      "difficulty_bucket": "ambiguous"
+    }
+  },
+  {
+    "ticket_id": "T-0073",
+    "customer_id": "C-018",
+    "order_id": null,
+    "subject": "Someone else is logged into my account - unauthorized access",
+    "body": "I just received an email notification that my password was changed but I did NOT change it. I can no longer access my account and when I tried to reset the password, the recovery email has been changed to something I don't recognize. Someone has taken over my account and I'm worried they have access to my saved payment information. Please help me immediately, my name is Rosa Castillo and my customer ID is C-018.",
+    "_truth": {
+      "expected_category": "technical",
+      "should_escalate": true,
+      "difficulty_bucket": "should_escalate"
+    }
+  },
+  {
+    "ticket_id": "T-0074",
+    "customer_id": "C-020",
+    "order_id": null,
+    "subject": "Unable to export usage reports from dashboard",
+    "body": "Hi, I'm trying to export our monthly usage reports from the enterprise dashboard but the export button just spins and never downloads anything. I've tried both Chrome and Firefox, cleared cache, same result. Can you point me to a workaround or fix? We need these reports for our internal review this week.",
+    "_truth": {
+      "expected_category": "technical",
+      "should_escalate": false,
+      "difficulty_bucket": "clear_self_serve"
+    }
+  },
+  {
+    "ticket_id": "T-0075",
+    "customer_id": "C-026",
+    "order_id": null,
+    "subject": "How to update our company billing contact",
+    "body": "Hi, I need to update the billing contact on our enterprise account. We've had a personnel change and need to switch the primary billing contact from our former CFO to our new one. Can you point me to where I can do this in the account settings? Thanks, Zane Cooper, account C-026.",
+    "_truth": {
+      "expected_category": "other",
+      "should_escalate": false,
+      "difficulty_bucket": "clear_self_serve"
+    }
+  },
+  {
+    "ticket_id": "T-0076",
+    "customer_id": "C-028",
+    "order_id": null,
+    "subject": "Pro tier benefits seem to have changed without notice",
+    "body": "I've been a Pro member for over a year now and I'm noticing that several of the benefits I originally signed up for appear to have been quietly removed or modified. I never received any communication about changes to the Pro tier terms. I'm considering whether this constitutes a breach of the agreement I entered into when I upgraded, and I'd like someone with authority to review my account and explain exactly what has changed and why.",
+    "_truth": {
+      "expected_category": "other",
+      "should_escalate": true,
+      "difficulty_bucket": "ambiguous"
+    }
+  },
+  {
+    "ticket_id": "T-0077",
+    "customer_id": "C-006",
+    "order_id": null,
+    "subject": "Ongoing security concern & contract discrepancy - need immediate executive attention",
+    "body": "This is Fatima Hassan, enterprise account C-006. I've been a customer for over three years and I'm deeply concerned that my account may have been compromised \u2014 I noticed unauthorized API key generation in our dashboard last week that none of my team initiated. Additionally, the volume pricing we were quoted during our last contract renewal does not match what's currently reflected in our billing portal. I raised the security issue in a previous ticket that was never resolved, and frankly I'm considering involving our legal team if this isn't addressed at an executive level within 24 hours. Please escalate this immediately.",
+    "_truth": {
+      "expected_category": "other",
+      "should_escalate": true,
+      "difficulty_bucket": "should_escalate"
+    }
+  },
+  {
+    "ticket_id": "T-0078",
+    "customer_id": "C-028",
+    "order_id": "O-1028",
+    "subject": "How do I update my payment method for Pro subscription?",
+    "body": "Hi, I need to update the credit card on file for my Pro Monthly subscription (O-1028). My current card is expiring next month and I want to make sure the renewal goes through without any issues. Can you point me to where I can change this? Thanks, Bo",
+    "_truth": {
+      "expected_category": "other",
+      "should_escalate": false,
+      "difficulty_bucket": "clear_self_serve"
+    }
+  },
+  {
+    "ticket_id": "T-0079",
+    "customer_id": "C-027",
+    "order_id": null,
+    "subject": "Someone has accessed my account without authorization",
+    "body": "I just noticed multiple login attempts and changes to my account settings that I did not make. My email address was changed and I can no longer access my account properly. I believe my account has been compromised and I need this locked down immediately before any further damage is done. My name is Adele Forsyth, customer ID C-027.",
+    "_truth": {
+      "expected_category": "other",
+      "should_escalate": true,
+      "difficulty_bucket": "should_escalate"
+    }
+  },
+  {
+    "ticket_id": "T-0080",
+    "customer_id": "C-027",
+    "order_id": null,
+    "subject": "How do I update my email address?",
+    "body": "Hi, I need to change the email address on my account. I signed up with an old email that I no longer have access to and want to switch it to my current one. Can you let me know how to do this? My account is under Adele Forsyth. Thanks!",
+    "_truth": {
+      "expected_category": "other",
+      "should_escalate": false,
+      "difficulty_bucket": "clear_self_serve"
+    }
+  }
+]

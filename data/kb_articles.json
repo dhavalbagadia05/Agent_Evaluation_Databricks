@@ -1,0 +1,107 @@
+[
+  {
+    "article_id": "KB-001",
+    "category": "billing",
+    "title": "How refunds are processed",
+    "content": "Refunds are issued to the original payment method within 5-10 business days of approval. Refund eligibility depends on the product type and time since purchase. Digital goods, subscription renewals already started, and enterprise contract items are typically non-refundable. Physical goods purchased within the last 30 days are eligible for full refund.",
+    "tags": ["refund", "payment", "policy"]
+  },
+  {
+    "article_id": "KB-002",
+    "category": "billing",
+    "title": "Understanding charges on your statement",
+    "content": "Charges appear on your statement as 'CO-EVALFLYWHEEL'. If you see duplicate charges, they are usually pre-authorization holds that drop off within 3-5 business days. Subscription charges are billed on the same day each month based on your signup date.",
+    "tags": ["charges", "statement", "duplicate"]
+  },
+  {
+    "article_id": "KB-003",
+    "category": "billing",
+    "title": "Updating payment method",
+    "content": "To update your payment method, go to Account Settings > Billing > Payment Methods. You can add, remove, or set a default payment method. Changes take effect immediately for future charges but do not retroactively update past invoices.",
+    "tags": ["payment", "account", "settings"]
+  },
+  {
+    "article_id": "KB-004",
+    "category": "shipping",
+    "title": "Tracking your order",
+    "content": "Once an order ships, tracking information is sent to the email on file. Orders typically ship within 1-2 business days of placement. Standard delivery is 3-5 business days; expedited is 1-2 business days. International orders take 7-14 business days.",
+    "tags": ["tracking", "delivery", "shipping"]
+  },
+  {
+    "article_id": "KB-005",
+    "category": "shipping",
+    "title": "Lost or stolen packages",
+    "content": "If a package shows as delivered but you did not receive it, first check with neighbors and household members. If still missing after 48 hours, contact support to file a claim. Packages in lost-in-transit status will be re-shipped at no charge once the carrier confirms loss.",
+    "tags": ["lost", "stolen", "claim"]
+  },
+  {
+    "article_id": "KB-006",
+    "category": "shipping",
+    "title": "Changing the shipping address",
+    "content": "Shipping addresses can be updated up until the order enters the 'processing' status. Once an order is shipped, the address cannot be changed. For undeliverable shipments, the package returns to our warehouse and we will contact you to arrange re-shipment or refund.",
+    "tags": ["address", "delivery", "change"]
+  },
+  {
+    "article_id": "KB-007",
+    "category": "refund",
+    "title": "Requesting a refund",
+    "content": "To request a refund, go to Orders > select the order > Request Refund. Most physical goods are refundable within 30 days. Once approved, refunds are issued to the original payment method within 5-10 business days. Refunded items must be returned in original condition.",
+    "tags": ["refund", "return", "request"]
+  },
+  {
+    "article_id": "KB-008",
+    "category": "refund",
+    "title": "Items that are non-refundable",
+    "content": "The following are non-refundable: digital downloads, started subscription periods, gift cards, customized items, enterprise contract items, and items past 30 days from delivery. Defective or damaged items qualify for replacement under our warranty policy regardless of these restrictions.",
+    "tags": ["non-refundable", "policy", "exceptions"]
+  },
+  {
+    "article_id": "KB-009",
+    "category": "refund",
+    "title": "Refund timing and method",
+    "content": "Approved refunds are processed within 1-2 business days on our end. Bank processing then takes 3-10 business days depending on your card issuer. The refund will appear on the original payment method. If you no longer have access to that payment method, contact support for alternatives.",
+    "tags": ["timing", "method", "processing"]
+  },
+  {
+    "article_id": "KB-010",
+    "category": "technical",
+    "title": "Resetting your password",
+    "content": "Go to the login page and click 'Forgot password'. Enter your email and follow the link sent to you. Reset links expire after 30 minutes. If you don't receive the email, check spam and verify the email address matches your account.",
+    "tags": ["password", "login", "reset"]
+  },
+  {
+    "article_id": "KB-011",
+    "category": "technical",
+    "title": "App keeps crashing — common fixes",
+    "content": "If the app is crashing, try: (1) update to the latest version, (2) restart your device, (3) clear app cache in settings, (4) reinstall the app. If crashes persist after these steps, please contact support with your device model, OS version, and a description of when crashes occur.",
+    "tags": ["crash", "troubleshooting", "app"]
+  },
+  {
+    "article_id": "KB-012",
+    "category": "technical",
+    "title": "Two-factor authentication setup",
+    "content": "To enable 2FA, go to Settings > Security > Two-Factor Authentication. You can use an authenticator app (recommended) or SMS. Backup codes are generated when 2FA is enabled — save these in a secure place in case you lose access to your primary method.",
+    "tags": ["2fa", "security", "authentication"]
+  },
+  {
+    "article_id": "KB-013",
+    "category": "other",
+    "title": "Updating account email or name",
+    "content": "Update your name in Settings > Profile. Email changes require verification: you'll receive a confirmation link at the new address that must be clicked within 24 hours. Until verified, the old email remains active for login.",
+    "tags": ["account", "email", "profile"]
+  },
+  {
+    "article_id": "KB-014",
+    "category": "other",
+    "title": "Deleting your account",
+    "content": "Account deletion is permanent and removes all order history, saved items, and personal data within 30 days. To delete your account, go to Settings > Account > Delete Account. Active subscriptions must be cancelled first. Enterprise accounts have separate deletion procedures via your account manager.",
+    "tags": ["delete", "account", "data"]
+  },
+  {
+    "article_id": "KB-015",
+    "category": "other",
+    "title": "How to escalate a complaint",
+    "content": "If you feel your concern was not adequately handled, you can request escalation in your existing support thread. A human supervisor will review the case within 1-2 business days. Enterprise customers should also notify their account manager.",
+    "tags": ["escalation", "complaint", "supervisor"]
+  }
+]
