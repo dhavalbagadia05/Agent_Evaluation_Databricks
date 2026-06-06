@@ -93,8 +93,13 @@ def _parse_final_output(content: str) -> dict[str, Any]:
 
 
 @mlflow.trace
-def run_agent(ticket: dict[str, Any], system_prompt: str | None = None, max_iters: int = 6) -> dict[str, Any]:
-    """Run the triage agent on one ticket. Returns {category, escalate, draft, reasoning}."""
+def run_agent(ticket: dict[str, Any], system_prompt: str | None = None, trace_tags: dict[str, str] | None = None, max_iters: int = 6) -> dict[str, Any]:
+    """Run the triage agent on one ticket. Returns {category, escalate, draft, reasoning}.
+
+    trace_tags, if provided, are attached to this call's trace (e.g. {"environment": "production"}).
+    """
+    if trace_tags:
+        mlflow.update_current_trace(tags=trace_tags)
     system_prompt = (system_prompt or _load_system_prompt()) + _OUTPUT_CONTRACT
     messages: list[dict[str, Any]] = [
         {"role": "system", "content": system_prompt},

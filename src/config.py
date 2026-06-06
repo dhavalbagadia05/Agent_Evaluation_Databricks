@@ -44,7 +44,9 @@ CATEGORIES = ["billing", "shipping", "refund", "technical", "other"]
 RESPONSE_LENGTH_MIN = 20
 RESPONSE_LENGTH_MAX = 150
 
-PROD_RUN_NAME = "production_traffic"  # run that holds the 80 agent traces (production traffic)
+# Tags stamped on production-traffic traces (by run_agent in 00) so 01/02 can select
+# them and tell them apart from evaluation-run traces.
+PRODUCTION_TRACE_TAGS = {"environment": "production"}
 MLFLOW_EXPERIMENT_NAME = os.environ.get("MLFLOW_EXPERIMENT_NAME", "/Shared/eval_flywheel_support_triage")
 
 # SQL warehouse ID used for production scorer monitoring (registered scorers run on
