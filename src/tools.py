@@ -6,6 +6,8 @@ src.data_load.load_seed_tables (run in 00_production_traffic_and_monitoring).
 """
 from typing import Any
 
+import mlflow
+from mlflow.entities import SpanType
 from pyspark.sql import SparkSession
 
 from .config import CUSTOMERS_TABLE, KB_ARTICLES_TABLE, ORDERS_TABLE
@@ -20,6 +22,7 @@ def _esc(value: str) -> str:
     return str(value).replace("'", "''")
 
 
+@mlflow.trace(span_type=SpanType.TOOL)
 def lookup_customer(customer_id: str) -> dict[str, Any]:
     """Return account context for a customer: tier, account age, prior unresolved tickets."""
     rows = _spark().sql(
@@ -30,6 +33,7 @@ def lookup_customer(customer_id: str) -> dict[str, Any]:
     return rows[0].asDict(recursive=True)
 
 
+@mlflow.trace(span_type=SpanType.TOOL)
 def check_order_status(order_id: str) -> dict[str, Any]:
     """Return status, shipping, and refund eligibility for an order."""
     rows = _spark().sql(
@@ -40,6 +44,7 @@ def check_order_status(order_id: str) -> dict[str, Any]:
     return rows[0].asDict(recursive=True)
 
 
+@mlflow.trace(span_type=SpanType.TOOL)
 def search_kb(query: str) -> list[dict[str, Any]]:
     """Return up to 3 KB articles matching the query by simple keyword overlap."""
     articles = [

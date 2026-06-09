@@ -28,9 +28,13 @@ def response_length_ok(outputs: dict[str, Any]) -> int:
 
 @scorer
 def tool_calls_valid(trace) -> int:
-    """1 if no tool_call span in this trace resulted in an error."""
-    spans = trace.search_spans(name="tool_call") if trace else []
+    """1 if every tool span succeeded — no error status and no {"error": ...} payload."""
+    from mlflow.entities import SpanType
+    spans = trace.search_spans(span_type=SpanType.TOOL) if trace else []
     for span in spans:
+        status_code = getattr(getattr(span, "status", None), "status_code", None)
+        if str(status_code).upper().endswith("ERROR"):
+            return 0
         outputs = getattr(span, "outputs", None)
         if isinstance(outputs, dict) and "error" in outputs:
             return 0

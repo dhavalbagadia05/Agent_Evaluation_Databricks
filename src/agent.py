@@ -130,15 +130,14 @@ def run_agent(ticket: dict[str, Any], system_prompt: str | None = None, trace_ta
                 ],
             })
             for tc in msg.tool_calls:
-                with mlflow.start_span(name="tool_call") as span:
-                    span.set_inputs({"tool": tc.function.name, "arguments_raw": tc.function.arguments})
-                    fn = TOOL_FUNCTIONS.get(tc.function.name)
-                    try:
-                        args = json.loads(tc.function.arguments)
-                        result = fn(**args) if fn else {"error": f"Unknown tool {tc.function.name}"}
-                    except Exception as e:
-                        result = {"error": str(e)}
-                    span.set_outputs(result)
+                # Each tool fn is @mlflow.trace(span_type=TOOL)-decorated, so calling it creates
+                # a span named after the tool (e.g. lookup_customer) with auto inputs/outputs.
+                fn = TOOL_FUNCTIONS.get(tc.function.name)
+                try:
+                    args = json.loads(tc.function.arguments)
+                    result = fn(**args) if fn else {"error": f"Unknown tool {tc.function.name}"}
+                except Exception as e:
+                    result = {"error": str(e)}
                 messages.append({
                     "role": "tool",
                     "tool_call_id": tc.id,
