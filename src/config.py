@@ -47,6 +47,11 @@ RESPONSE_LENGTH_MAX = 150
 # Tags stamped on production-traffic traces (by run_agent in 00) so 01/02 can select
 # them and tell them apart from evaluation-run traces.
 PRODUCTION_TRACE_TAGS = {"environment": "production"}
+
+# Agent application version (MLflow LoggedModel name). Bump when the agent CODE / tools /
+# model change — NOT when the prompt changes (the prompt is versioned separately and rides
+# through the production alias). Traces link to this via trace.info.model_id.
+AGENT_VERSION = "support_triage_agent_v1"
 MLFLOW_EXPERIMENT_NAME = os.environ.get("MLFLOW_EXPERIMENT_NAME", "/Shared/eval_flywheel_support_triage")
 
 # SQL warehouse ID used for production scorer monitoring (registered scorers run on
